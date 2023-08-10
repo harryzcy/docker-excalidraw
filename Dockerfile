@@ -1,4 +1,4 @@
-FROM node:18-bullseye AS build
+FROM node:18.17.0-bookworm AS build
 
 ARG VERSION=v0.15.0
 RUN git clone --depth 1 --branch ${VERSION} https://github.com/excalidraw/excalidraw.git
