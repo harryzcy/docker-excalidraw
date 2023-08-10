@@ -1,6 +1,6 @@
 FROM node:18-bullseye AS build
 
-ARG VERSION=v1.15.0
+ARG VERSION=v0.15.0
 RUN git clone --depth 1 --branch ${VERSION} https://github.com/excalidraw/excalidraw.git
 
 WORKDIR /excalidraw
