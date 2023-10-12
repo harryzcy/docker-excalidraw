@@ -1,6 +1,6 @@
 FROM node:18.18.1-bookworm AS build
 
-ARG VERSION=v0.16.0
+ARG VERSION=v0.16.1
 RUN git clone --depth 1 --branch ${VERSION} https://github.com/excalidraw/excalidraw.git
 
 WORKDIR /excalidraw
