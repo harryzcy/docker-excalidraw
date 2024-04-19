@@ -1,20 +1,5 @@
 {
   "extends": [
-    "config:recommended",
-    ":disableDependencyDashboard"
-  ],
-  "labels": [
-    "dependencies"
-  ],
-  "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest"
-      ],
-      "automerge": true
-    }
+    "github>harryzcy/renovate-config"
   ]
 }
