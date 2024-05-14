@@ -10,7 +10,7 @@ RUN yarn --ignore-optional --network-timeout 600000
 ARG NODE_ENV=production
 RUN yarn build:app:docker
 
-FROM nginx:1.26.0@sha256:80e6ac4ff1d9e5fe352295de27c5a813b8f8eeaef631cb27b1b479c2f24b433e
+FROM nginx:1.26.0@sha256:1a44fa50ea515ca4cfd9e57c5df2e37534b9b55a3089dd188f8bf0b2d1d90e65
 
 COPY --from=build /excalidraw/build /usr/share/nginx/html
 
